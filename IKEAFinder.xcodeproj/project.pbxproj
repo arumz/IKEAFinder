@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B9C9B26F215989E700540B50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C9B26E215989E700540B50 /* AppDelegate.swift */; };
-		B9C9B271215989E700540B50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C9B270215989E700540B50 /* ViewController.swift */; };
 		B9C9B274215989E700540B50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C9B272215989E700540B50 /* Main.storyboard */; };
 		B9C9B276215989E800540B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C9B275215989E800540B50 /* Assets.xcassets */; };
 		B9C9B279215989E800540B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C9B277215989E800540B50 /* LaunchScreen.storyboard */; };
+		B9C9B28121598A6700540B50 /* IKEATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C9B28021598A6700540B50 /* IKEATableViewController.swift */; };
+		B9C9B28321598CEF00540B50 /* IKEADetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C9B28221598CEF00540B50 /* IKEADetailViewController.swift */; };
+		B9C9B2852159900D00540B50 /* IKEA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C9B2842159900D00540B50 /* IKEA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B9C9B26B215989E700540B50 /* IKEAFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IKEAFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C9B26E215989E700540B50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9C9B270215989E700540B50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9C9B273215989E700540B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9C9B275215989E800540B50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9C9B278215989E800540B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9C9B27A215989E800540B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9C9B28021598A6700540B50 /* IKEATableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKEATableViewController.swift; sourceTree = "<group>"; };
+		B9C9B28221598CEF00540B50 /* IKEADetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKEADetailViewController.swift; sourceTree = "<group>"; };
+		B9C9B2842159900D00540B50 /* IKEA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKEA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				B9C9B26E215989E700540B50 /* AppDelegate.swift */,
-				B9C9B270215989E700540B50 /* ViewController.swift */,
 				B9C9B272215989E700540B50 /* Main.storyboard */,
 				B9C9B275215989E800540B50 /* Assets.xcassets */,
 				B9C9B277215989E800540B50 /* LaunchScreen.storyboard */,
 				B9C9B27A215989E800540B50 /* Info.plist */,
+				B9C9B28021598A6700540B50 /* IKEATableViewController.swift */,
+				B9C9B28221598CEF00540B50 /* IKEADetailViewController.swift */,
+				B9C9B2842159900D00540B50 /* IKEA.swift */,
 			);
 			path = IKEAFinder;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C9B271215989E700540B50 /* ViewController.swift in Sources */,
+				B9C9B28321598CEF00540B50 /* IKEADetailViewController.swift in Sources */,
 				B9C9B26F215989E700540B50 /* AppDelegate.swift in Sources */,
+				B9C9B28121598A6700540B50 /* IKEATableViewController.swift in Sources */,
+				B9C9B2852159900D00540B50 /* IKEA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
