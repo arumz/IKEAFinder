@@ -27,7 +27,7 @@ class IKEA: NSObject {
     var realLifeHomes: Int
     var cashLanes: Int
     var restaurantSeating: Int
-    var smalland: Bool
+    var smaland: Bool
     var webpage: String
     var latitude: Double
     var longitude: Double
@@ -46,7 +46,7 @@ class IKEA: NSObject {
         realLifeHomes: Int,
         cashLanes: Int,
         restaurantSeating: Int,
-        smalland: Bool,
+        smaland: Bool,
         webpage: String,
         latitude: Double,
         longitude: Double) {
@@ -63,7 +63,7 @@ class IKEA: NSObject {
         self.realLifeHomes = realLifeHomes
         self.cashLanes = cashLanes
         self.restaurantSeating = restaurantSeating
-        self.smalland = smalland
+        self.smaland = smaland
         self.webpage = webpage
         self.latitude = latitude
         self.longitude = longitude

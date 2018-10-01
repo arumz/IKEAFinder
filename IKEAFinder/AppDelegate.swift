@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Create THE ONE AND ONLY IKEADataStore object
+        let IKEABucket = IKEADataStore()
+        
+        //ADD THE IKEADataStore  OBJECT TO THE IKEATableViewController
+        //root view controller is an instance of ikea table view controller
+        let IKEATVC = window!.rootViewController as! IKEATableViewController
+        IKEATVC.IKEABucket = IKEABucket
         return true
     }
 
