@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //ADD THE IKEADataStore  OBJECT TO THE IKEATableViewController
         //root view controller is an instance of ikea table view controller
-        let IKEATVC = window!.rootViewController as! IKEATableViewController
+        let navController = window!.rootViewController as! UINavigationController
+        let IKEATVC = navController.topViewController as! IKEATableViewController
         IKEATVC.IKEABucket = IKEABucket
         return true
     }
