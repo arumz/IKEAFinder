@@ -272,6 +272,19 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bhf-tY-XOK">
+                                <rect key="frame" x="6" y="581" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4t-d3-V7d">
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="30"/>
+                                        <state key="normal" title="View On Map"/>
+                                        <connections>
+                                            <segue destination="mzO-Cz-DXd" kind="show" identifier="IKEAMapSegue" id="aCg-dJ-W4j"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -298,6 +311,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qm7-JX-QwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2840.8000000000002" y="272.66009852216752"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Zng-9h-6K1">
+            <objects>
+                <viewController id="mzO-Cz-DXd" customClass="IKEAMapViewController" customModule="IKEAFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hjq-ir-2Ya">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RyO-U4-z6L">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RyO-U4-z6L" firstAttribute="top" secondItem="qiB-m4-bWE" secondAttribute="top" id="Hc7-8r-Wxz"/>
+                            <constraint firstItem="qiB-m4-bWE" firstAttribute="trailing" secondItem="RyO-U4-z6L" secondAttribute="trailing" id="bko-oM-Lj4"/>
+                            <constraint firstItem="qiB-m4-bWE" firstAttribute="bottom" secondItem="RyO-U4-z6L" secondAttribute="bottom" id="fON-TL-Mw4"/>
+                            <constraint firstItem="RyO-U4-z6L" firstAttribute="leading" secondItem="qiB-m4-bWE" secondAttribute="leading" id="qtd-ud-vu5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qiB-m4-bWE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBq-oH-jWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3811" y="283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v5J-kz-4Mq">

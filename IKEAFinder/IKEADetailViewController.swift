@@ -30,6 +30,9 @@ class IKEADetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         print(selectedIKEA.storeName)
         print(selectedIKEA.storeNumber)
+        
+        // connect all labels to selectedIKEA attributes
+        
         lblStoreName.text = selectedIKEA.storeName
         //convert store number to string
         let stringStoreNumber = String(selectedIKEA.storeNumber)
@@ -49,23 +52,25 @@ class IKEADetailViewController: UIViewController {
         lblNumberOfHomes.text = stringNumberHomes
         lblWebpage.text = selectedIKEA.webpage
         
-       
-        
-//        storeImage: String,
-//        address: String,
-//        city: String,
-//        zipCode: String,
-//        country: String,
-//        telephone: String,
-//        size: Int,
-//        roomSettings: Int,
-//        realLifeHomes: Int,
-//        cashLanes: Int,
-//        restaurantSeating: Int,
-//        smaland: Bool,
-//        webpage: String,
-//        latitude: Double,
-//        longitude: Double
     }
-    
+        //segue will engage
+        //override
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            //get a reference to our segue target
+           
+                //if segue.identifier == "IKEAMapSegue" {
+                let mapView  = segue.destination as! IKEAMapViewController
+                
+                //move (a copy of) the instance of the selected ikea class
+                //from this view controller to the next view controller
+                mapView.selectedIKEA = selectedIKEA
+             //}
+            
+        
+            
+            
+        }
 }
+
+    
+
