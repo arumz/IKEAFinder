@@ -8,9 +8,14 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class IKEAMapViewController: UIViewController {
+//UIViewController is a class, CLLocationManagerDelegate is a protocol
+//class Person create Peter Parker object. Peter Parker references Spidey protocol to have spidey powers
+class IKEAMapViewController: UIViewController, CLLocationManagerDelegate {
     var selectedIKEA: IKEA!
+    //object of class CLLocationManager
+    var locationManager: CLLocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,4 +23,20 @@ class IKEAMapViewController: UIViewController {
         self.title = selectedIKEA.storeName
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        // create an object of cclllocattionmanager
+        
+        //Core Location Manager Initializer
+        locationManager = CLLocationManager()
+        //assigning object to delegate
+        locationManager.delegate = self
+        
+        locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
+        
+        // Permissions
+        locationManager.requestWhenInUseAuthorization()
+        
+        // Update Location
+        locationManager.startUpdatingLocation()
+    }
 }
