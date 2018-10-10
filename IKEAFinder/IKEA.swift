@@ -7,13 +7,22 @@
 //
 
 import Foundation
+import MapKit
 
 //: Playground - noun: a place where people can play (imported from playground)
 
 
 var str = "Hello, playground"
 
-class IKEA: NSObject {
+//MK annotation is another protocol
+class IKEA: NSObject, MKAnnotation {
+    //intersection of latitude and longitude
+    //{} means computed property
+    //when we request the coordinate property of IKEA it is calculated
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2DMake(latitude, longitude)
+    }
+    
     var storeName: String
     var storeNumber: Int
     var storeImage: String

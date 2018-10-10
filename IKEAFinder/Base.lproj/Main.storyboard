@@ -333,6 +333,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qiB-m4-bWE"/>
                     </view>
+                    <connections>
+                        <outlet property="mapWorldMap" destination="RyO-U4-z6L" id="uFd-sQ-jAs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBq-oH-jWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
